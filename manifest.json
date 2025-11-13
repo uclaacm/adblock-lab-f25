@@ -1,0 +1,20 @@
+{
+    "name": "Hello Extensions of the world!",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "hello_extensions.png"
+    },
+
+    "permissions": ["declarativeNetRequest"],
+    "host_permissions": ["*://*/*"],
+    "declarative_net_request": {
+      "rule_resources": [{
+        "id": "ruleset1",
+        "enabled": true,
+        "path": "rules.json"
+      }]
+    }
+  }

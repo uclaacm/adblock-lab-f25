@@ -1,0 +1,65 @@
+[{
+    "id": 1,
+    "priority": 1,
+    "action": {"type": "block"},
+    "condition": {
+        "regexFilter": "ad\\.doubleclick\\.net",
+        "resourceTypes": ["main_frame"]
+    }
+},
+{
+    "id": 2,
+    "priority": 1,
+    "action": {"type": "block"},
+    "condition": {
+        "regexFilter": "s0\\.2mdn\\.net",
+        "resourceTypes": ["main_frame", "script", "image"]
+    }
+},
+{
+    "id": 3,
+    "priority": 1,
+    "action": {"type": "block"},
+    "condition": {
+        "regexFilter": "tpc\\.googlesyndication\\.com",
+        "resourceTypes": ["main_frame", "script", "image"]
+    }
+},
+{
+    "id": 4,
+    "priority": 1,
+    "action": {"type": "block"},
+    "condition": {
+        "regexFilter": "cdn\\.stackadapt\\.com",
+        "resourceTypes": ["main_frame", "script", "image"]
+    }
+},
+{
+    "id": 5,
+    "priority": 1,
+    "action": {"type": "block"},
+    "condition": {
+        "regexFilter": "cdn\\.flashtalking\\.com",
+        "resourceTypes": ["main_frame", "script", "image"]
+    }
+},
+{
+    "id": 6,
+    "priority": 1,
+    "action": {"type": "block"},
+    "condition": {
+        "regexFilter": "c\\.evidon\\.com",
+        "resourceTypes": ["main_frame", "script", "image"]
+    }
+},
+{
+    "id": 7,
+    "priority": 1,
+    "action": {"type": "block"},
+    "condition": {
+        "regexFilter": "gcdn\\.2mdn\\.net",
+        "resourceTypes": ["main_frame", "script", "image"]
+    }
+}
+
+]
