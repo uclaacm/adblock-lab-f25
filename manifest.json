@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Extensions (with DNR Ad Blocking)",
+  "description": "Base popup + request blocking via declarativeNetRequest.",
+  "version": "1.0.0",
+
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["*://*/*"],
+
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+
+  "action": {
+    "default_popup": "hello.html",
+    "default_title": "Hello + Ad Block"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["blocker.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["blocker.js"],
+      "run_at": "document_idle"
+    }, 
+    {
+      "matches": [
+        "*://www.cnn.com/*",
+        "*://edition.cnn.com/*",
+        "*://cnn.com/*",
+        "*://www.nbcnews.com/*",
+        "*://nbcnews.com/*"
+      ],
+      "js": ["content/hide-ads.js"],
+      "run_at": "document_idle"
+    }    
+    
+  ]
+}

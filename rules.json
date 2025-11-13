@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9.-]*\\.)?doubleclick\\.net/.*",
+      "initiatorDomains": ["speedtest.net", "www.speedtest.net"],
+      "resourceTypes": ["script","image","stylesheet","xmlhttprequest","sub_frame","media","ping","other"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9.-]*\\.)?googlesyndication\\.com/.*",
+      "initiatorDomains": ["speedtest.net", "www.speedtest.net"],
+      "resourceTypes": ["script","image","stylesheet","xmlhttprequest","sub_frame","media","ping","other"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9.-]*\\.)?googletagservices\\.com/.*",
+      "initiatorDomains": ["speedtest.net", "www.speedtest.net"],
+      "resourceTypes": ["script","image","stylesheet","xmlhttprequest","sub_frame","media","ping","other"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9.-]*\\.)?adservice\\.google\\.com/.*",
+      "initiatorDomains": ["speedtest.net", "www.speedtest.net"],
+      "resourceTypes": ["script","image","stylesheet","xmlhttprequest","sub_frame","media","ping","other"]
+    }
+  }
+]
