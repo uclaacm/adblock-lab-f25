@@ -1,0 +1,27 @@
+{
+    "name": "Hello Extensions",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches": ["*"],
+          "js": ["adblock.js"],
+          "run_at": "document_idle"
+        }
+      ],
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "icon"
+    },
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "declarative_net_request" : {
+    "rule_resources" : [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  }
+}
