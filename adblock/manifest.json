@@ -1,0 +1,21 @@
+{
+  "name": "My extension",
+  "manifest_version": 3,
+    "version": "1.0",
+    
+  "declarative_net_request" : {
+    "rule_resources" : [{
+      "id": "ruleset",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "http://www.blogger.com/*",
+    "http://*.google.com/*"
+  ]
+}
