@@ -17,7 +17,9 @@
     }]
   },
   "permissions": [
-    "declarativeNetRequest"
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "storage"
   ],
   "content_scripts": [
     {
