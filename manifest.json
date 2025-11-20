@@ -1,0 +1,28 @@
+{
+  "name": "ACM Cyber AdBlocker Extension",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+
+  "declarative_net_request" : {
+    "rule_resources" : [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.cnn.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
