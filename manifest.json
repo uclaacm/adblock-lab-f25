@@ -5,7 +5,7 @@
     "manifest_version": 3,
     "content_scripts": [
         {
-          "matches": ["*"],
+          "matches": ["<all_urls>"],
           "js": ["adblock.js"],
           "run_at": "document_idle"
         }
